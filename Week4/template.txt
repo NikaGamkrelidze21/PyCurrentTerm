@@ -1,0 +1,11 @@
+# book_list = [
+#             ('The Book Thief', 'Markus Zusak', 17),
+#             ('Animal Farm', 'George Orwell', 13),
+#             ('The Hunger Games', 'Suzanne Collins', 17),
+#             ('Harry Potter and the Prisoner of Azkaban', 'Rowling',  25),
+#             ('Harry Potter and the Goblet of Fire', 'Rowling', 24),
+#             ('გამზრდელი', 'აკაკი წერეთელი', 8),
+#             ('ჩემი თავგადასავალი', 'აკაკი წერეთელი', 8),
+#             ('განდეგილი', 'ილია ჭავჭავაძე', 10),
+#             ('ვეფხისტყაოსანი', 'შოთა რუსთაველი', 29)
+#         ]
