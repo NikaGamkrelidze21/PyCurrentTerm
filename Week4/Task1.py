@@ -34,10 +34,6 @@ def users_have_money_more_then(money):
                        where balance > :money""", {"money":money})
     return data.fetchall()
     
-def books_sold_earlier_then(year):
-    data = cur.execute("""select book_id from purchase
-                       where purchase_date > ':year'""", {'year':year})
-    return data.fetchall()
     
     
     
@@ -55,7 +51,6 @@ test_all(
         price_condition_lower_then("20"),
         unique_authors(),
         users_have_money_more_then(100),
-        books_sold_earlier_then("2018-01-01")
         )
 # task N2 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
