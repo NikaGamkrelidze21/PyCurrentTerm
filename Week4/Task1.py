@@ -45,12 +45,13 @@ def book_never_sold():
     return data.fetchall()
 
 def users_and_books_they_bought():
-    data = cur.execute("""select u.username, p.book_id 
-                       from users as u inner join purchase p 
-                       on u.id = p.user_id """)
+    data = cur.execute("""select username, title 
+                       from books as b join 
+                       (select * from 
+                       users as u join purchase as p
+                       on u.id = p.user_id) as up on b.id = up.book_id""")
     return data.fetchall()
     
-
     
     
     
