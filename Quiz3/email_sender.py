@@ -5,7 +5,9 @@ def send_Email(email = "nika.gamkrelidze.1@btu.edu.ge", title="Happy Birthday", 
     # მილოცვა, სათაური რომელიც გამოცნდება მეილის აღწერაში 
     # ტექსტი რომელიც უშუალოდ მეილში იქნება ცაწერილი
     # api.courier ის დახმარებით ვაგზავნი მეილზე ტექსტს
+    
     url = "https://api.courier.com/send"
+    
     payload = {
         "message": {
             "content": {
@@ -17,6 +19,11 @@ def send_Email(email = "nika.gamkrelidze.1@btu.edu.ge", title="Happy Birthday", 
             }
         }   
     }
+    
+    # თუ გინდათ თქვენი მეილიდან იყოს გაგზავნილი მილოცვა 
+    # უნდა გადახვიდეთ https://www.courier.com/ დარეგისტრირდეთ
+    # და თქვენი api key დააგენერიროთ რომელსაც ჩასვამთ "Authorization"-ში 
+    # ქვემოთ მოცემული ფორმატით "Bearer " + api_key
     
     headers = {
         "Accept": "application/json",
